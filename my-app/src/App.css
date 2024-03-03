@@ -1,0 +1,226 @@
+/* App Container */
+.App {
+  text-align: left;
+
+}
+
+/* Header */
+.App-header {
+  background-color: #f7f7f7;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Logo */
+.App-logo {
+  display: none; /* Hide the logo */
+}
+
+/* Link */
+.App-link {
+  color: #ff7f50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.App-link:hover {
+  color: #ff6347;
+}
+
+/* Pagination Container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Pagination */
+.pagination {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination li {
+  margin: 0 8px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #ff6347;
+}
+
+.pagination .active button {
+  background-color: #ff6347;
+}
+
+.pagination .disabled button {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-family: Arial, sans-serif;
+}
+
+th {
+  background-color: #ff7f50;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+td {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Add hover effect on table rows */
+tr:hover {
+  background-color: #fff5ee;
+}
+
+/* Hide Date and Time Headers */
+th:nth-child(7),
+th:nth-child(8) {
+  display: none;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  padding: 8px;
+  border: 2px solid #ff7f50;
+  border-radius: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Add hover effect */
+.search-bar:hover {
+  border-color: #ff6347;
+}
+
+/* Add focus effect */
+.search-bar:focus {
+  border-color: #ff6347;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #ff7f50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+/* Dropdown Button Hover */
+.dropbtn:hover {
+  background-color: #ff6347;
+}
+
+/* Dropdown Content Button */
+.dropdown-content button {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Dropdown Content Button Hover */
+.dropdown-content button:hover {
+  background-color: #f7f7f7;
+}
+
+/* Show Dropdown Content on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Styling for h1 */
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff6347;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .pagination-container {
+    margin-top: 10px;
+  }
+  
+  .search-bar {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .dropdown {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    overflow-x: auto;
+  }
+}
