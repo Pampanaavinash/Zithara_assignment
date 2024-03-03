@@ -1,21 +1,22 @@
 
-# Customer Records Management System
+# 
+Management System for Customer Records
 
-This project is a simple web application for managing customer records. It provides functionality to view, search, sort, and paginate through a list of customer records fetched from a PostgreSQL database.
 
+This is a straightforward web application designed for handling customer records. It offers features to browse, search, arrange, and navigate through a collection of customer data sourced from a PostgreSQL database.
 ## Features
 
-- View a list of customer records including their name, age, phone number, location, and creation date.
-- Search for customers by name or location.
-- Sort records by date or time of creation.
-- Paginate through the list of records.
+-Display a comprehensive list of customer records, showcasing their name, age, phone number, location, and the date they were created.
+-Easily search for customers based on their name or location.
+-Arrange records by their creation date or time for better organization.
+-Navigate through the list of records seamlessly with built-in pagination functionality.
 
-## Technologies Used
+## Technologies
 
-- **Frontend**: React.js
-- **Backend**: Express.js
-- **Database**: PostgreSQL
-- **Styling**: HTML/CSS
+- **React.js**: Frontend Framework: Utilizes React.js for the user interface.
+- **Express.js**: Backend Framework: Employs Express.js to handle server-side logic.
+- **PostgreSQL**: Database Management: PostgreSQL is utilized for efficient data storage and retrieval.
+- **HTML/CSS**: Styling Tools: HTML/CSS are employed for creating visually appealing designs and layouts.
 
 ## Getting Started
 
@@ -23,7 +24,7 @@ To get started with the project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/TurubatlaHemanth/Zithara_assignment.git
+   git clone https://github.com/Pampanaavinash/Zithara_assignment.git
 2. change directory to where App.js is present
    ```bash
     cd my-app/src
@@ -39,12 +40,15 @@ To get started with the project, follow these steps:
 7. Start backend by using below command
     ```bash
       node server.js
-8. navigate to frontend mu-app where App.js is present and start by using following commands
+8. Navigate back to the frontend directory containing App.js:
     ```bash
       cd ../my-app/src
-      npm start
-9. now access the app on your localhost on port 3000 go to browser and type
+9. start the application by typing this command
+    ```bash
+       npm start
+10. Open your web browser and visit the following URL to access the application:
    ```bash
-     localhost:3000
-10. Enjoy the app........
+    http://localhost:3000/
+
+
    
